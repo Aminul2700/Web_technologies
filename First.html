@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form </title>
+</head>
+<body>
+    <h2>Registration form </h2>
+    <form action = "/register " method="post">
+        <!--full name field-->
+        <lebel for="fullname" >Fullname </lebel>
+        <input type ="text" id ="fullname" name ="fullname" required> <br> <br>
+        <!--email field-->
+        <lebel for="email" >Email</lebel>
+        <input type ="email" id ="email" name ="email" required> <br> <br>
+         <!--password field-->
+        <lebel for="password" >password</lebel>
+        <input type ="password" id ="password" name ="password" required> <br> <br>
+         <!--confirm password-->
+        <lebel for="confirm_password" >Email</lebel>
+        <input type ="password" id ="confirm_password" name ="confirm_password" required> <br> <br>
+
+        <!--gender selection-->
+        <lebel for="gender" >gender : </lebel>
+        <input type ="radio" name="gender" id="gender" value="male" required >
+        <lebel for="male" >male </lebel>
+        <input type ="radio" name="gender" id="gender" value="female" required >
+        <lebel for="female" >female </lebel> <br> <br>
+
+      
+
+        <!--date of birth-->
+        <lebel for ="country"> country</lebel>
+        <select id="country"  name ="country" required>
+              <option value="Bangladesh" > Bangladesh</option>
+              <option value="USA" > USA</option>
+              <option value="India" > India</option>
+              <option value="UK" > UK</option>
+        </select> <br> <br>
+
+        <!--agree to terms and condition-->
+        <lebel for ="terms" >
+            <input type="checkbox" id ="terms" name ="terms" required>
+            i agree to the terms and condition.
+        </lebel> <br> <br>
+        
+        <!--submit button-->
+        <button type="submit" > Registration</button>
+
+    </form>
+      
+    
+</body>
+</html>
