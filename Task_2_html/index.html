@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="University Admission Form">
+    <meta name="keywords" content="Admission Form, University, Student Registration">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+</head>
+
+<body>
+
+    <h1>University Admission Form</h1>
+
+    <form action = "/register " method="post">
+
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" maxlength="30" required><br><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" maxlength="30" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Academic Information Section -->
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="ssc">SSC Result (GPA):</label><br>
+            <input type="text" id="ssc" name="ssc" maxlength="5" required><br><br>
+
+            <label for="hsc">HSC Result (GPA):</label><br>
+            <input type="text" id="hsc" name="hsc" maxlength="5" required><br><br>
+
+            <label for="year">Passing Year:</label><br>
+            <input type="text" id="year" name="year" maxlength="4" required><br><br>
+
+            <label for="department">Preferred Department:</label><br>
+            <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="CSE">Computer Science & Engineering (CSE)</option>
+                <option value="EEE">Electrical & Electronic Engineering (EEE)</option>
+                <option value="BBA">Business Administration (BBA)</option>
+                <option value="ENG">English</option>
+                <option value="Law">Law</option>
+            </select>
+            <br><br>
+
+            <label>Interests:</label><br>
+            <input type="checkbox" id="coding" name="interest" value="Coding">
+            <label for="coding">Coding</label><br>
+
+            <input type="checkbox" id="music" name="interest" value="Music">
+            <label for="music">Music</label><br>
+
+            <input type="checkbox" id="sports" name="interest" value="Sports">
+            <label for="sports">Sports</label><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- File Upload Section -->
+        <fieldset>
+            <legend>Upload Documents</legend>
+
+            <label for="photo">Upload Photo:</label><br>
+            <input type="file" id="photo" name="photo" required><br><br>
+
+            <label for="transcript">Upload Transcript:</label><br>
+            <input type="file" id="transcript" name="transcript" required><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Submit / Reset Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Internal CSS for styling sections */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* About Me Section */
+        #about-me {
+            background-color: #f8c291; /* light coral */
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Education Section */
+        #education {
+            background-color: #82ccdd; /* light blue */
+            padding: 50px;
+            text-align: center;
+        }
+
+        .center-table {
+            margin-left: auto;
+            margin-right: auto;
+            /* or simply: margin: 0 auto; */
+            border-collapse: collapse; /* optional, for cleaner borders */
+        }
+
+        /* Hobbies Section */
+        #hobbies {
+            background-color: #b8e994; /* light green */
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Horizontal line style */
+        hr {
+            border: none;
+            height: 5px;
+            width: 60%;
+            margin: 40px auto;
+            background-color: #6a89cc; /* custom color */
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- About Me Section -->
+    <div id="about-me" class="section">
+        <h2>About Me</h2>
+         <img src="person.jpg" alt="Student Photo" width="200">
+        <p style="color: blue;">I am MD. Aminul Islam Dipu, a dedicated Computer Science student with a deep interest in web development,
+                programming fundamentals, and software engineering. I love exploring new technologies and building projects 
+                that enhance my skills and creativity.
+                <br><br>
+                I enjoy working with HTML, CSS, and JavaScript, and I am continuously improving my problem-solving abilities through challenges 
+                and hands-on learning. My long-term goal is to become a skilled software developer and contribute to impactful technological 
+                solutions. I am currently preparing for internship opportunities to gain real-world experience and expand my technical knowledge.
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Education Section -->
+    <div id="education" class="section">
+         <section id="education">
+            <h2>Educational Qualifications</h2>
+
+            <table  class="center-table" border="1" cellpadding="8">
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SSC</td>
+                        <td>Nahar Academy High School</td>
+                        <td>2019</td>
+                        <td>4.39</td>
+                    </tr>
+                    <tr>
+                        <td>HSC</td>
+                        <td>Dhaka Commerce College</td>
+                        <td>2021</td>
+                        <td>5.00</td>
+                    </tr>
+                    <tr>
+                        <td>BSc in CSE</td>
+                        <td>American International University-Bangladesh</td>
+                        <td>Running</td>
+                        <td>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <hr>
+
+    <!-- Hobbies Section -->
+    <div id="hobbies" class="section">
+        <h2>Hobbies</h2>
+        <p>In my free time, I enjoy coding personal projects, reading tech blogs, playing chess, and exploring nature.</p>
+    </div>
+
+</body>
+</html>
